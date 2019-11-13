@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">PruebaAppBotones</string>
+    <string name="action_settings">Settings</string>
+    <string name="saludo">Saludo</string>
+</resources>
