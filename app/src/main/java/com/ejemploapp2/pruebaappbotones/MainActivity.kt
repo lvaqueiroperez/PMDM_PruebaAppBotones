@@ -8,7 +8,7 @@ import android.view.MenuItem
 
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
-import org.jetbrains.anko.toast
+import org.jetbrains.anko.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -22,14 +22,18 @@ class MainActivity : AppCompatActivity() {
                 .setAction("Action", null).show()
         }
 
-        //OJO!!! Tendremos que importar los elementos de la interfaz en el código kotlin si queremos trabajar con ellos
-        btnSaludo.setOnClickListener{
+        //OJO!!! Tendremos que importar los elementos de la interfaz en el código kotlin si queremos trabajar con ellos (alt + Intro)
+        btnSaludo.setOnClickListener {
             //Para cambiar el texto no hace falta acceder a las variables declaradas
             btnSaludo.setText("HOLAA!")
+            //PARA ACCEDER A LAS VARIABLES XML !!!
+            toast(R.string.saludar)
 
         }
-
+        //Función toast hecha gracias a las librerías "Anko"
         toast("Esto es un mensaje toast gracias a ANKO")
+
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
