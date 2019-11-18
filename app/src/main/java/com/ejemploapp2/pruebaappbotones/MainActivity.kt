@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         //OJO!!! Tendremos que importar los elementos de la interfaz en el código kotlin si queremos trabajar con ellos (alt + Intro)
+        //PODRÍAMOS CREAR UNA FUNCIÓN EN VEZ DE ACCEDER AL LISTENER PARA TRABAJAR DE FORMA MÁS CÓMODA (hacer)
         btnSaludo.setOnClickListener {
             //Para cambiar el texto no hace falta acceder a las variables declaradas
             btnSaludo.setText("HOLAA!")
